@@ -1,5 +1,4 @@
 #include "main.h"
-
 #include <stdlib.h>
 
 /**
@@ -10,7 +9,7 @@
 
  * @c: char to assign
 
- * Description: creat array of size size and assign char c
+ * Description: create array of size size and assign char c
 
  * Return: pointer to array, NULL if fail
 
@@ -26,14 +25,9 @@ char *create_array(unsigned int size, char c)
 
 	unsigned int i;
 
-
-
 	str = malloc(sizeof(char) * size);
-
 	if (size == 0 || str == NULL)
-
 		return (NULL);
-
 
 
 	for (i = 0; i < size; i++)
